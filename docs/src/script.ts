@@ -1,4 +1,5 @@
-const clientId = "c6f9a7985b2c489d98dda726138c1612"; // Replace with your client id
+const clientId = import.meta.env.VITE_SPOTIFY_CLIENT_ID as string; // Replace with your client id
+console.log("Client ID loaded:", clientId);
 const params = new URLSearchParams(window.location.search);
 const code = params.get("code");
 
