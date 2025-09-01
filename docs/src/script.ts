@@ -1,4 +1,5 @@
 const clientId = import.meta.env.VITE_SPOTIFY_CLIENT_ID as string; // Replace with your client id
+//const clientSecret = import.meta.env.VITE_SPOTIFY_CLIENT_SECRET as string;
 console.log("Client ID loaded:", clientId);
 const params = new URLSearchParams(window.location.search);
 const code = params.get("code");
